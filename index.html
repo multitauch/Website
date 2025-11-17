@@ -1,61 +1,103 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simon Knoll - Personal Website</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simon Knoll — Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo-placeholder"></div>
-        <nav>
-            <a href="#">Pictures</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Startseite">
+        <svg width="42" height="42" viewBox="0 0 24 24" aria-hidden="true">
+          <rect width="24" height="24" rx="5" fill="#d5d5d5" />
+          <path d="M6 7h12M6 12h12M6 17h12" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+      </a>
 
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a href="#pictures">Pictures</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
     <section class="hero">
+      <div class="container">
         <h1>Simon Knoll</h1>
-        <p>Personal Website</p>
+        <p class="tagline">Personal Website</p>
+      </div>
     </section>
 
-    <div class="image-placeholder">Bild Platzhalter</div>
-
-    <section class="links-section">
-        <h2>Find me on ...</h2>
-        <div class="links-container">
-
-            <div class="link-box">
-                <div class="icon-placeholder"></div>
-                <h3>LinkedIn</h3>
-                <p>
-                    If you'd like to learn more about my professional background, current projects, and areas of expertise, feel free to connect with me on LinkedIn.
-                </p>
-            </div>
-
-            <div class="link-box">
-                <div class="icon-placeholder"></div>
-                <h3>Instagram</h3>
-                <p>
-                    If you'd like to see more of my visual impressions and moments I capture, feel free to follow me on Instagram.
-                </p>
-            </div>
-
-            <div class="link-box">
-                <div class="icon-placeholder"></div>
-                <h3>Github</h3>
-                <p>
-                    If you're interested in exploring my code, projects, or technical experiments, feel free to visit my GitHub.
-                </p>
-            </div>
-
+    <section class="profile container">
+      <div class="profile-media">
+        <div class="image-placeholder" role="img" aria-label="Profilbild Platzhalter">
+          Bild Platzhalter
         </div>
+      </div>
+
+      <div class="profile-intro">
+        <h2 class="sr-only">Über mich</h2>
+        <p>
+          Willkommen auf meiner persönlichen Website. Hier findest du Eindrücke, Projekte und Wege, wie du mit mir in Kontakt treten kannst.
+        </p>
+      </div>
     </section>
-    <footer>
-        <nav>
-            <a href="#">Impressum</a>
-        </nav>
-    </footer>
+
+    <section id="links" class="links container">
+      <h2>Find me on ...</h2>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <img src="images/linkedin-logo-editorial-free-vector-1267283644.jpg"> 
+          </div>
+          <div class="card-body">
+            <h3>LinkedIn</h3>
+            <p>
+              If you'd like to learn more about my professional background, current projects, and areas of expertise, feel free to connect with me on LinkedIn.
+            </p>
+            <a class="btn-link" target="_blank" href="https://de.linkedin.com/in/s-knoll">Visit LinkedIn →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+             <img src="images/logo-instagram-vector-17-1022813106.png"> 
+          </div>
+          <div class="card-body">
+            <h3>Instagram</h3>
+            <p>
+              If you'd like to see more of my visual impressions and moments I capture, feel free to follow me on Instagram.
+            </p>
+            <a class="btn-link" target="_blank" href="https://www.instagram.com/simonkpictures/">Visit Instagram →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <img src="images/github_PNG80-2765046503.png"> 
+          </div>
+          <div class="card-body">
+            <h3>Github</h3>
+            <p>
+              If you're interested in exploring my code, projects, or technical experiments, feel free to visit my GitHub.
+            </p>
+            <a class="btn-link" target="_blank" href="https://github.com/multitauch">Visit GitHub →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <strong>Simon Knoll</strong> — All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
