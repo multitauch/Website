@@ -9,16 +9,13 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#" aria-label="Startseite">
-        <svg width="42" height="42" viewBox="0 0 24 24" aria-hidden="true">
-          <rect width="24" height="24" rx="5" fill="#d5d5d5" />
-          <path d="M6 7h12M6 12h12M6 17h12" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
-        </svg>
+      <a class="brand" href="index.html" aria-label="Startseite">
+        <img src="images/s-logo.png" alt="S Logo">
       </a>
 
       <nav class="site-nav" aria-label="Hauptnavigation">
-        <a href="#pictures">Pictures</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html#pictures" id="nav-pictures">Pictures</a>
+        <a href="impressum.html" id="nav-contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -29,19 +26,18 @@
         <h1>Simon Knoll</h1>
         <p class="tagline">Personal Website</p>
       </div>
+      
     </section>
 
     <section class="profile container">
       <div class="profile-media">
-        <div class="image-placeholder" role="img" aria-label="Profilbild Platzhalter">
-          Bild Platzhalter
-        </div>
+        <img class="personal-image" role="img" aria-label="Profilbild" src="images/simon.JPEG"> 
       </div>
 
       <div class="profile-intro">
-        <h2 class="sr-only">Über mich</h2>
+        <h2 class="sr-only">About me</h2>
         <p>
-          Willkommen auf meiner persönlichen Website. Hier findest du Eindrücke, Projekte und Wege, wie du mit mir in Kontakt treten kannst.
+            Welcome to my personal website. Here you can find impressions, projects, and ways to get in touch with me.
         </p>
       </div>
     </section>
@@ -50,9 +46,9 @@
       <h2>Find me on ...</h2>
 
       <div class="cards">
-        <article class="card">
+        <article class="card" id="linkedin-card">
           <div class="card-icon" aria-hidden="true">
-            <img src="images/linkedin-logo-editorial-free-vector-1267283644.jpg"> 
+            <img src="images/linkedin.png"> 
           </div>
           <div class="card-body">
             <h3>LinkedIn</h3>
@@ -63,9 +59,9 @@
           </div>
         </article>
 
-        <article class="card">
+        <article class="card" id="instagram-card">
           <div class="card-icon" aria-hidden="true">
-             <img src="images/logo-instagram-vector-17-1022813106.png"> 
+            <img src="images/instagram.png">
           </div>
           <div class="card-body">
             <h3>Instagram</h3>
@@ -76,9 +72,9 @@
           </div>
         </article>
 
-        <article class="card">
+        <article class="card" id="github-card">
           <div class="card-icon" aria-hidden="true">
-            <img src="images/github_PNG80-2765046503.png"> 
+            <img src="images/github.png"> 
           </div>
           <div class="card-body">
             <h3>Github</h3>
@@ -99,5 +95,6 @@
       </nav>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
